@@ -1,0 +1,921 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Robocon LDCE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		
+	</head>
+
+
+
+
+<style>
+
+.image img{
+	width:300px!important;
+	margin-top: 20px;
+	
+}
+
+.wrapper.style3 .image {
+			border: solid 10px #fff;
+			margin: 0px 20px;
+		}
+
+		.wrapper.style3 p{
+	margin-top: 10px;
+	margin-bottom: 5px;
+	color: white!important;
+}
+    /*@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);*/
+    *:focus {
+  outline: none;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+#login-box {
+  position: relative;
+  margin: 5% auto;
+  width: 600px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.or {
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background: #DDD;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: 40px;
+  text-align: center;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  background: url('https://goo.gl/YbktSj');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 2px 2px 0;
+}
+
+.right .loginwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #FFF;
+  text-align: center;
+}
+
+button.social-signin {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+button.social-signin:hover,
+button.social-signin:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin.facebook {
+  background: #32508E;
+}
+
+button.social-signin.twitter {
+  background: #55ACEE;
+}
+
+button.social-signin.google {
+  background: #DD4B39;
+}
+/* login page ended */
+
+
+
+
+
+
+
+	#year_2021 {
+		text-align:justify;
+	transform: rotate(-90deg);
+	transform-origin: left top 0;
+}
+
+	img
+	{width: 100%!important;
+				min-block-size:300px;
+		max-block-size: 310px;
+	}
+	#sidebar h2{
+		color:rgba(0, 0, 0, 0.815);
+	}
+	.style2 p{
+		color:#ffffffcb;
+	}
+	.box h3{text-decoration: underline;
+		
+	}
+    .wrapper.style3 h3 {
+				color: rgba(0, 0, 0, 0.712)!important;
+				font-size: 18px;
+			}
+</style>
+
+
+
+	<body class="left-sidebar is-preload" oncontextmenu="return false;">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1>Robocon Ldce gallery</h1>
+							<p>Few wonderful and memorable moments are stored here</p>
+						</div>
+
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="index.html">Home</a></li>
+								
+								<li><a href="about.html">ABOUT</a></li>
+								<li>
+									<a href="gallery.html">Gallery</a>
+									<ul>
+										<li><a href="#team_members">Team members</a></li>
+										<li><a href="#highlights">Achievements</a></li>
+									
+										<li>
+											<a href="#more">More</a>
+											<!-- <ul>
+												<li><a href="#">year 2022 </a></li>
+												<li><a href="#">year 2021</a></li>
+												<li><a href="#">year 2020</a></li>
+												<li><a href="#">year 2019</a></li>
+												<li><a href="#">year 2018</a></li>
+											</ul> -->
+										</li>
+										
+									</ul>
+								</li>
+								 <!-- <ul> </ul>
+								<li><a href="gallery.html">Gallery</a></li> -->
+								<li><a href="events.html">NEWS</a></li>
+								<li><a href="contact.html">CONTACT</a></li>
+							   
+							</ul>
+						</nav>
+
+
+				</section>
+
+		
+
+			<!-- team members -->
+            <section id="team_members" class="wrapper style1" style="text-align: center;">
+                <div  style="background-color: #e97770;"class="title">Team members</div>
+                <div class="container">
+					<form id="hidden" style="display: none;"> 
+						<center><h3>Add more Team members</h3></center>
+<!-- 			
+						<div class="col-12"  style="margin: 10px 0px;">
+							<input type="text" id="folder" class="form-control" placeholder="category(GOLD/SILVER/BRONZE)">                     
+							</input>
+						</div> -->
+		
+						<div class="col-12"  style="margin: 10px 0px;">
+						<input type="text" id="year" class="form-control" placeholder="year"></input>
+						</div>
+		
+		
+						<!-- <div class="col-12" style="margin: 10px 0px;" >
+						<input type="text" id="heading" class="form-control" placeholder="Title here please."></input>
+						</div>
+		
+						<div class="col-12"  style="margin: 10px 0px;">	
+							<textarea type="post" id="post" class="form-control" placeholder="Information area"></textarea>
+						</div> -->
+		
+						<input type="file" class="button style3" id="TeamImage" accept="images/sponsers "  style="margin-bottom: 20px;font-size:14px!important">
+					
+						<div class="text-center">
+							<button  class="button style3"type="button" class="btn btn-success" onclick="uploadTeamMembers()" >Upload</button>
+						</div>	<br><br>
+		
+					</form>
+
+				
+					
+					<div class="row aln-center" id="TeamMemberPosts">
+						
+					</div>
+					
+					
+					<div class="row aln-center" id="TeamMemberPosts1" style="display: none;" >
+
+					</div>
+					<!-- <div class="row aln-center">
+                        <div class="col-4 col-12-medium">
+                            <section class="highlight">
+                                <a  class="image featured"><img src="images/robocon2022 team.jpg" alt="robocon2022 team" /></a>
+                                <h3>Team Robocon LDCE 2022</h3>
+                                
+                            </section>
+                        </div>
+            
+                        <div class="col-4 col-12-medium">
+                            <section class="highlight">
+                                <a class="image featured" ><img  src="images/teamrobocon2021.jpeg" alt="robocon2021 team" /></a>
+                                <h3>Team Robocon LDCE 2021</a></h3>
+                            
+                            </section>
+                        </div>
+            
+                        <div class="col-4 col-12-medium">
+                            <section class="highlight">
+                                <a class="image featured" ><img  src="images/roboconldce2019.jpg" alt="robocon2019 team" /></a>
+                                <h3>Team Robocon LDCE 2019</a></h3>
+                            
+                            </section>
+                        </div>
+            
+                        <div class="col-4 col-12-medium">
+                            <section class="highlight">
+                                <a class="image featured" ><img src="https://scontent.famd4-1.fna.fbcdn.net/v/t31.18172-8/28516627_1839447299439594_2139962265467249646_o.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=hZKXtmLiLoEAX8Z4KV8&_nc_ht=scontent.famd4-1.fna&oh=00_AT-VOTNddSVmTWWM6mHqAwRx_7QR54FnsgkOyDEIQ0dFIQ&oe=63098EF1" alt="robocon2018 team" /></a>
+                                <h3>Team Robocon LDCE 2018</a></h3>
+                            
+                            </section>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <section class="highlight">
+                                <a class="image featured" ><img src="https://scontent.famd4-1.fna.fbcdn.net/v/t31.18172-8/22338930_1687147148002944_2843219869604794579_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=e3f864&_nc_ohc=-dVwg4xndZMAX-ABTio&_nc_ht=scontent.famd4-1.fna&oh=00_AT-E-2LlNUnUq_-tWTZv_Dz2e_ADcWciv-BF1S0mYuoWkw&oe=63086A90" alt="robocon2017 team" /></a>
+                                <h3>Team Robocon LDCE 2017</a></h3>
+                            
+                            </section>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <section class="highlight">
+                                <a class="image featured" ><img  src="https://scontent.famd4-1.fna.fbcdn.net/v/t31.18172-8/12841403_1133692300015101_5334336066002130338_o.jpg?_nc_cat=100&ccb=1-7&_nc_sid=19026a&_nc_ohc=U5wNSFhzjk4AX8aHVHe&_nc_ht=scontent.famd4-1.fna&oh=00_AT9BHZSAeHE6d9C2WR6yblrKW32Yy9E6vu9lFqpz13cOXw&oe=630A1520"robocon2016 team" /></a>
+                                <h3>Team Robocon LDCE 2016</a></h3>
+                            
+                            </section>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <section class="highlight">
+                                <a class="image featured" ><img  src="https://scontent.famd4-1.fna.fbcdn.net/v/t1.18169-9/11403010_1002535209797478_2111163359273210513_n.png?_nc_cat=100&ccb=1-7&_nc_sid=19026a&_nc_ohc=fGrlVJ8edxUAX-_8nRf&_nc_ht=scontent.famd4-1.fna&oh=00_AT84h5GM09dy9Bn52zAPpymAdEjuPOVRsxY4CxqOEg0Lvg&oe=630995E0"robocon2015 team" /></a>
+                                <h3>Team Robocon LDCE 2015</a></h3>
+                            
+                            </section>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <section class="highlight">
+                                <a class="image featured" ><img  src="https://scontent.famd4-1.fna.fbcdn.net/v/t31.18172-8/10714551_848181558566178_7266444793386839336_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=19026a&_nc_ohc=Qoew05Al_nAAX-SyLTj&_nc_ht=scontent.famd4-1.fna&oh=00_AT_EBunwIlgwJgR05FLxs6Yc-YRuQ7XD__c6AyWMDunJXA&oe=630BC219"robocon2014 team" /></a>
+                                <h3>Team Robocon LDCE 2014</a></h3>
+                            
+                            </section>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <section class="highlight">
+                                <a class="image featured" ><img  src="https://scontent.famd4-1.fna.fbcdn.net/v/t31.18172-8/1507523_661322323918770_644312754_o.jpg?_nc_cat=106&ccb=1-7&_nc_sid=19026a&_nc_ohc=JqHxzIj7jw8AX-Dua2r&_nc_ht=scontent.famd4-1.fna&oh=00_AT8rEULGQZAm8PIV2B4bczyyZdIyQB9GOGNiIxgbH2_5EQ&oe=630AEAB4"robocon2013 team" /></a>
+                                <h3>Team Robocon LDCE 2013</a></h3>
+                            
+                            </section>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <section class="highlight">
+                                <a class="image featured" ><img src="https://scontent.famd4-1.fna.fbcdn.net/v/t1.18169-9/302874_472188359498835_1968830494_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_ohc=QbNfaiDJsXgAX9litel&_nc_ht=scontent.famd4-1.fna&oh=00_AT8yrbCutPf9-rEJgPBF-dWd7dWKcP-1jC5mwwH1-YzmpQ&oe=630C847B"robocon2012 team" /></a>
+                                <h3>Team Robocon LDCE 2012</a></h3>
+                            
+                            </section>
+                        </div>
+                    </div> -->
+
+                                   </div>
+                
+            </section>
+
+            				
+<!-- Achievements-->
+				<section id="highlights"   class="wrapper style2">
+					<div  class="title">Achievements</div>
+					<div class="container">
+						<div id="hidden1" style="display: none;">
+							<form id="post-form">
+								<center><h3>Add more achievements</h3></center>
+					
+								<div class="col-12" style="margin: 10px 0px;" >
+								<input type="text" id="achievementHeading" class="form-control" placeholder="Headlines here please."></input>
+								</div>
+					
+								<div class="col-12"  style="margin: 10px 0px;">	
+									<textarea type="post" id="achievementPara" class="form-control" placeholder="paragraph area"></textarea>
+								</div>
+								<input type="file" class="button style1" id="achievementImage" accept="images/sponsers "  style="margin-bottom: 20px;font-size:14px!important;justify-content: center;">
+								
+								
+								<div class="text-center">
+									<button  class="button style1"type="button" class="btn btn-success" onclick="uploadAchievement()" >Done</button>
+								</div>
+								<br><br><br>
+					
+							</form>
+						</div>
+
+					
+						
+						<div class="row aln-center" id="achievementPosts2">
+							
+						</div>
+						
+						
+						<div class="row aln-center" id="achievementPosts2_1" style="display: none;" >
+
+						</div>
+
+						<!-- <div  class="row aln-center">
+							<div class="col-4 col-12-medium">
+								<section   class="highlight">
+									<a  class="image featured"><img src="images/achievement2022.jpeg" alt="robocon2022 team" /></a>
+									<h3>Qualify for nationals(2022) </h3>
+									
+								</section>
+							</div>
+
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a class="image featured" ><img  src="https://scontent.famd4-1.fna.fbcdn.net/v/t1.6435-9/64541686_2516026775114973_932642759527890944_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=mHOhorYf5-AAX9dxjdM&_nc_ht=scontent.famd4-1.fna&oh=00_AT__zjKigzmMNUZKFShQO5AW7TYdZ-b1m2LJrGdXCe88qw&oe=630C9A2E" alt="robocon2019 team" /></a>
+									<h3>National level winner (2019)</a></h3>
+								
+								</section>
+							</div>
+
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a class="image featured" ><img src="https://scontent.famd4-1.fna.fbcdn.net/v/t31.18172-8/28516521_1839449696106021_2332629411035387833_o.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=JHrLALMlyXAAX-CmA5a&_nc_ht=scontent.famd4-1.fna&oh=00_AT_bJGd0lWOXYRoUcrVEAQ4iF7QQHsS19ux601IqfVNICA&oe=630A2DA3" alt="robocon2019 team" /></a>
+									<h3>Best idea award (2018)</a></h3>
+								
+								</section>
+							</div>
+
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a class="image featured" ><img  src="https://scontent.famd4-1.fna.fbcdn.net/v/t1.18169-9/11403010_1002535209797478_2111163359273210513_n.png?_nc_cat=100&ccb=1-7&_nc_sid=19026a&_nc_ohc=fGrlVJ8edxUAX-_8nRf&_nc_ht=scontent.famd4-1.fna&oh=00_AT84h5GM09dy9Bn52zAPpymAdEjuPOVRsxY4CxqOEg0Lvg&oe=630995E0" alt="robocon2018 team" /></a>
+									<h3>Respected third position (2015)</a></h3>
+								
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a class="image featured" ><img  src="https://scontent.famd4-1.fna.fbcdn.net/v/t1.18169-9/302874_472188359498835_1968830494_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_ohc=QbNfaiDJsXgAX9litel&_nc_ht=scontent.famd4-1.fna&oh=00_AT8yrbCutPf9-rEJgPBF-dWd7dWKcP-1jC5mwwH1-YzmpQ&oe=630C847B"robocon2012 team" /></a>
+									<h3>Best innovative design (2012)</a></h3>
+								
+								</section>
+							</div>
+						</div> -->
+					</div>
+					
+				</section>
+
+<!--more-->
+<section id="highlights" class="wrapper style3">
+
+	<div class="title" id="more">More</div>
+	
+
+	<div class="container mt-2" style="background-color: none!important;">
+		<div class="card">
+			<div class="card-body" id="hidden2" style="display: none;" >
+				<form id="post-form">
+					<center><h3>Add more memory</h3></center>
+
+					
+					<div class="col-12" style="margin: 10px 0px;" >
+						
+					<input type="text" id="morepost" class="form-control" placeholder="Title here please."></input>
+					</div>
+					
+					<input type="file" class="button style3" id="moreimage" accept="images/*" "><br><br>
+					<div class="text-center">
+						<button  class="button style3"type="button" class="btn btn-success" onclick="upload()" >Upload</button>
+					</div>
+
+				</form>
+			 </div>
+			 
+			 <div class="row aln-center" id="moreposts">
+						
+			</div>
+			
+			
+			<div class="row aln-center" id="moreposts1" style="display: none;" >
+
+			</div>
+		
+
+		</div>
+
+		
+			</div>
+
+		
+			
+		
+</section>
+</div>
+	</div>
+
+	<!-- <div class="container">
+		
+		
+		
+		  <div class="row aln-center">
+			
+						<div class="col-4 col-12-medium">
+							
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+								<h3><a href="#">company 1</a></h3>
+								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+								<h3><a href="#">company 2</a></h3>
+								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+								<h3><a href="#">company 3</a></h3>
+								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+					</div> 
+
+
+					<div class="row aln-center">
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+								<h3><a href="#">company 1</a></h3>
+								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+								<h3><a href="#">company 2</a></h3>
+								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+								<h3><a href="#">company 3</a></h3>
+								<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+					</div> 
+	</div>
+	<br><br>
+	<p style="text-align: center;">For sponsership and donation please visit our <a href="contact.html"
+			style="color: white!important;">Contact</a> page</p> -->
+
+
+
+
+			<!-- Footer -->
+			<section id="footer" class="wrapper">
+				<div class="title">others</div>
+				<div class="container">
+					
+					<div class="row">
+						<div class="col-6 col-12-medium">
+
+							<!-- Contact Form -->
+								<section>
+									<form method="post" action="#">
+										<div class="row gtr-50">
+										
+											<div class="col-12">
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.759261174865!2d72.54259821448896!3d23.032609821733764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85277f790a8b%3A0x19d65a6f82b8c100!2sLARCET%20(ROBOCON%20LDCE)!5e0!3m2!1sen!2sin!4v1659098182274!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+											</div>
+											
+										</div>
+									</form>
+								</section>
+
+						</div>
+						<div class="col-6 col-12-medium">
+
+							<!-- Contact -->
+								<section class="feature-list small">
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<section>
+												<h3 class="icon solid fa-home">Other Useful Link</h3>
+												<a target="_blank" href="http://ldce.ac.in/">LDCE</a><br>
+												<a target="_blank" href="http://www.ddrobocon.in/">DD Robocon</a><br>
+												<a target="_blank" href="https://en.wikipedia.org/wiki/ABU_Robocon">ABU Robocon</a><br>
+												
+										
+											</section>
+										</div>
+										<div class="col-6 col-12-small">
+											<section>
+												<h3 class="icon solid fa-comment">Social</h3>
+												<p>
+													<a target="_blank" href="https://www.instagram.com/roboconldce/">Instagram</a><br />
+													<a target="_blank" href="https://in.linkedin.com/company/robocon-ldce-team-robocon-india-2019">Linkedin</a><br />
+													<a target="_blank" href="https://www.facebook.com/roboconldce">facebook</a>
+												</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-small">
+											<section>
+												<h3 class="icon solid fa-envelope">Email</h3>
+												<p>
+													<a itemprop="email" href="mailto:teamroboconldceofficial@gmail.com">teamroboconldce<br>official@gmail.com</a>
+												</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-small">
+											<section>
+												<h3 class="icon solid fa-phone">Phone</h3>
+												<p>
+													<a  href="tel:7043026316">+917043026316</a>
+												</p>
+											</section>
+										</div>
+									</div>
+								</section>
+
+						</div>
+					</div>
+					<div id="copyright">
+						<ul>
+							<li>&copy; Robocon LDCE</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                            
+							<li>
+                                
+                                <!-- <input  style="background-color: black!important;"type="submit" id='loginForm' name="login" value="Admin Login" style="height: 50px;" /></li> -->
+                                <button style="background-color: black!important;" id="adminLogin"  >Admin login</button></li>
+                            <div id="login-box" style="width: 100%;display: none;">
+                                <div id="LoginForm"class="left" style="height:auto ;width:100%;align-items: center;">
+                                  <h1 id='status'>login</h1>
+                                  <input type="text" id="email" name="email" placeholder="E-mail" style="width: 100%;" />
+                                  <input type="password" id="password" name="password" placeholder="Password"  style="width: 100%;"/>
+                                  
+                                  <input type="submit" id='login' name="login" value="Login" style="height: 50px;" />
+                                  
+                                  <input type="submit" id='logout' name="login" value="Logout" style="height: 50px;" />
+                              
+                                </div></div>
+						</ul>
+					</div>
+
+
+                    
+                    
+				</div>
+			</section>
+
+		</div>
+
+		<!-- toggling admin login page -->
+<script>
+     adminLogin.addEventListener('click',(e)=>{
+		var element = document.getElementById('login-box');
+if(element.style.display === "none"){
+    element.style.display = "block";
+}else{
+    element.style.display = "none";
+	
+}
+		   
+		   })
+</script>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+			<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+
+
+			<!-- firebase configure -->
+<script>
+  // Your web app's Firebase configuration
+
+  var  firebaseConfig = {
+
+apiKey: "AIzaSyClMG5syq-JH_kpFwsQdlvfWUaQmCFICBg",
+authDomain: "roboconldce.firebaseapp.com",
+databaseURL: "https://roboconldce-default-rtdb.firebaseio.com",
+projectId: "roboconldce",
+storageBucket: "roboconldce.appspot.com",
+messagingSenderId: "807558400123",
+appId: "1:807558400123:web:23854cf62b3ec368603ade",
+measurementId: "G-R89DYSR2B1"
+
+};
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="default1.js"></script>
+
+
+
+
+
+        <!-- authentication script -->
+        
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+    import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+   
+  
+  const firebaseConfig = {
+  
+  apiKey: "AIzaSyClMG5syq-JH_kpFwsQdlvfWUaQmCFICBg",
+  authDomain: "roboconldce.firebaseapp.com",
+  databaseURL: "https://roboconldce-default-rtdb.firebaseio.com",
+  projectId: "roboconldce",
+  storageBucket: "roboconldce.appspot.com",
+  messagingSenderId: "807558400123",
+  appId: "1:807558400123:web:23854cf62b3ec368603ade",
+  measurementId: "G-R89DYSR2B1"
+  
+  };
+  
+    // Initialize Firebase
+    // const hidden=getElementById("hidden");
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
+  
+  
+   login.addEventListener('click',(e)=>{
+     var email = document.getElementById('email').value;
+     var password = document.getElementById('password').value;
+  
+        signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed in 
+          const user = userCredential.user;
+  
+          const dt = new Date();
+           update(ref(database, 'users/' + user.uid),{
+            last_login: dt,
+          })
+  
+           alert('User loged in!');
+           document.getElementById("hidden").style.display='block';
+		   
+           document.getElementById("hidden2").style.display='block';
+           document.getElementById("achievementPosts2_1").style.display='flex';
+           document.getElementById("achievementPosts2").style.display='none';
+           document.getElementById("TeamMemberPosts1").style.display='flex';
+           document.getElementById("TeamMemberPosts").style.display='none'; 
+		   document.getElementById("moreposts1").style.display='flex';
+           document.getElementById("moreposts").style.display='none';
+		   
+           document.getElementById("hidden1").style.display='block';
+		   if(event.keyCode==123)
+	  {
+		return true;
+	  }
+	  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))
+	  {
+		return true;
+	  }
+	  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0))
+	  {
+		return true;
+	  }
+	  if(e.ctrlKey && e.shiftKey && e.keyCode == 'U'.charCodeAt(0))
+	  {
+		return true;
+	  }
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+  
+          alert(errorMessage);
+    });
+  
+   });
+  
+  const user = auth.currentUser;
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/firebase.User
+      const uid = user.uid;
+      //bla bla bla
+      // ...
+    } else {
+      // User is signed out
+      // ...
+      //bla bla bla
+    }
+  });
+  
+  logout.addEventListener('click',(e)=>{
+  
+     signOut(auth).then(() => {
+       // Sign-out successful.
+       alert('user loged out'); 
+           document.getElementById("achievementPosts2_1").style.display='none';
+           document.getElementById("hidden2").style.display='none';
+           document.getElementById("achievementPosts2").style.display='flex';
+       document.getElementById("hidden").style.display = 'none';
+       document.getElementById("hidden1").style.display = 'none';
+	    document.getElementById("TeamMemberPosts").style.display='flex';
+           document.getElementById("TeamMemberPosts1").style.display='none';
+		   document.getElementById("moreposts").style.display='flex';
+           document.getElementById("moreposts1").style.display='none';
+	   if(event.keyCode==123)
+	  {
+		return false;
+	  }
+	  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))
+	  {
+		return false;
+	  }
+	  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0))
+	  {
+		return false;
+	  }
+	  if(e.ctrlKey && e.shiftKey && e.keyCode == 'U'.charCodeAt(0))
+	  {
+		return false;
+	  }
+	   
+       
+     }).catch((error) => {
+       // An error happened.
+       const errorCode = error.code;
+       const errorMessage = error.message;
+  
+          alert(errorMessage);
+     });
+  
+  });
+  
+  </script>
+  
+
+
+	</body>
+</html>
