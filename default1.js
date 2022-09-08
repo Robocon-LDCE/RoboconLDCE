@@ -56,27 +56,31 @@ function upload1(){
   
   }
   
+
+
   window.onload=function(){
-    this.newsgetdata();
-    this.getdata1();
-    this.getPastThemedata();
-    this.getTeamMemberdata();
-  this.getRegisterButtonStatus();
-    this.getdata();
-    this.achievementgetdata();
-    this.achievementgetdata1();
-    this.getupdatedata();
-    this.getHardSkill();
-    this.getSoftSkill();
-    this.getMechanicalSkill();
-    this.getHardwarePhotos();
-    this.getSoftwarePhotos();
-    this.getMechanicalPhotos();
+  
+   try{ this.newsgetdata();}catch(e){}
+   try{this.getdata1();}catch(e){}
+   try{ this.getPastThemedata();}catch(e){}
+   try{ this.getTeamMemberdata();}catch(e){}
+ try{ this.getRegisterButtonStatus();}catch(e){}
+   try{ this.getdata();}catch(e){}
+   try{ this.achievementgetdata();}catch(e){}
+   try{ this.achievementgetdata1();}catch(e){}
+   try{ this.getupdatedata();}catch(e){}
+   try{ this.getHardSkill();}catch(e){}
+   try{ this.getSoftSkill();}catch(e){}
+   try{ this.getMechanicalSkill();}catch(e){}
+   try{ this.getHardwarePhotos();}catch(e){}
+   try{ this.getSoftwarePhotos();}catch(e){}
+   try{ this.getMechanicalPhotos();}catch(e){}
 
   }
   
   
   function getdata1(){
+    try{
 //   e.preventDefault();
   
     // for gold
@@ -84,7 +88,7 @@ function upload1(){
     firebase.database().ref(`images/Sponsers/GOLD`).once('value').then(function(snapshot){
       //get your posts div
       var posts_div=document.getElementById(`posts`);
-      
+      try{
       //remove all remaining data in that div
       posts.innerHTML="";
       //get data from firebase
@@ -103,14 +107,15 @@ function upload1(){
         //  "<button class='hidden2' id='"+key+"' onclick='delete_post(this.id)' style='margin-bottom:30px;' >Delete</button>"+
         "</div></div></a>"+posts_div.innerHTML;
       }
-      
+    }
+    catch(e){}
     
     });
   
     firebase.database().ref(`images/Sponsers/GOLD`).once('value').then(function(snapshot){
       //get your posts1 div
       var posts1_div=document.getElementById(`posts1`);
-      
+      try{
       //remove all remaining data in that div
       posts1.innerHTML="";
       //get data from firebase
@@ -129,7 +134,8 @@ function upload1(){
          "<button class='btn btn-danger' id='"+key+"' onclick='deleteGold_post(this.id)' style='margin-bottom:30px;width:100px!important' >Delete</button>"+
         "</a>"+posts1_div.innerHTML;
       }
-      
+    }
+    catch(e){}
     
     });
   
@@ -142,7 +148,7 @@ function upload1(){
     firebase.database().ref(`images/Sponsers/SILVER`).once('value').then(function(snapshot){
       //get your posts div
       var Silverposts_div=document.getElementById(`Silverposts`);
-      
+      try{
       //remove all remaining data in that div
       Silverposts.innerHTML="";
       //get data from firebase
@@ -162,7 +168,8 @@ function upload1(){
        
         "</div></div></a>"+Silverposts_div.innerHTML;
       }
-      
+    }
+    catch(e){}
     
     });
   
@@ -171,7 +178,7 @@ function upload1(){
     firebase.database().ref(`images/Sponsers/SILVER`).once('value').then(function(snapshot){
       //get your posts div
       var Silverposts1_div=document.getElementById(`Silverposts1`);
-      
+      try{
       //remove all remaining data in that div
       Silverposts1.innerHTML="";
       //get data from firebase
@@ -191,7 +198,8 @@ function upload1(){
        
         "</a>"+Silverposts1_div.innerHTML;
       }
-      
+    }
+    catch(e){}
     
     });
   
@@ -209,7 +217,7 @@ function upload1(){
     firebase.database().ref(`images/Sponsers/BRONZE`).once('value').then(function(snapshot){
       //get your posts div
       var Bronzeposts_div=document.getElementById(`Bronzeposts`);
-      
+      try{
       //remove all remaining data in that div
       Bronzeposts.innerHTML="";
       //get data from firebase
@@ -229,7 +237,8 @@ function upload1(){
        
         "</div></div></a>"+Bronzeposts_div.innerHTML;
       }
-      
+    }
+    catch(e){}
     
     });
   
@@ -238,7 +247,7 @@ function upload1(){
     firebase.database().ref(`images/Sponsers/BRONZE`).once('value').then(function(snapshot){
       //get your posts div
       var Bronzeposts1_div=document.getElementById(`Bronzeposts1`);
-      
+      try{
       //remove all remaining data in that div
       Bronzeposts1.innerHTML="";
       //get data from firebase
@@ -258,13 +267,18 @@ function upload1(){
        
         "</a>"+Bronzeposts1_div.innerHTML;
       }
-      
+    }
+    catch(e){}
     
     });
   
   
   
     
+  }
+  catch(e){}
+  finally{console.log("getdata1 worked")}
+  
   }
   
 
@@ -432,13 +446,13 @@ function deleteMechanicalSkill_post(key){
   
   function achievementgetdata(){
   
-  
+  try{
     // for gold
   
     firebase.database().ref(`images/Achievement`).once('value').then(function(snapshot){
       //get your posts div
       var achievementPosts_div=document.getElementById(`achievementPosts`);
-      
+      try{
       //remove all remaining data in that div
       achievementPosts.innerHTML="";
       //get data from firebase
@@ -459,7 +473,8 @@ function deleteMechanicalSkill_post(key){
       //  "<button class='btn btn-danger' id='"+key+"' onclick='deleteAchievement_post(this.id)' style='margin-bottom:30px'>Delete</button>"+
        "</section>"+
        "</div>" ;
-      }
+      }}
+      catch(e){}
       
     
     });
@@ -469,7 +484,7 @@ function deleteMechanicalSkill_post(key){
     firebase.database().ref(`images/Achievement`).once('value').then(function(snapshot){
       //get your posts div
       var achievementPosts_div=document.getElementById(`achievementPosts1`);
-      
+      try{
       //remove all remaining data in that div
       achievementPosts.innerHTML="";
       //get data from firebase
@@ -491,12 +506,15 @@ function deleteMechanicalSkill_post(key){
        "</section>"+
        "</div>" ;
       }
-      
+    }
+    catch(e){}
     
     });
    
   
   }
+catch(e){}
+finally{console.log("achievement data loaded")}}
   
   
 
@@ -504,7 +522,7 @@ function deleteMechanicalSkill_post(key){
   
   function getRegisterButtonStatus()
   {
-
+try{
     firebase.database().ref('registerationButton/status').once('value').then(function(snapshot){
 
         //get data from firebase
@@ -512,15 +530,19 @@ function deleteMechanicalSkill_post(key){
         // alert(data);
         if (data=='true') {
             // alert("sahi hai");
-            registerButton.style.display="block";inverthidden.style.display="none";
+           try{ registerButton.style.display="block";inverthidden.style.display="none";}
+           catch(e){}
            
         } else {
-            registerButton.style.display="none";inverthidden.style.display="block";
+          try{  registerButton.style.display="none";inverthidden.style.display="block";}
+          catch(e){}
           
         }
     }
         )
-      
+  }
+  
+  catch(e){}
   }
   
 
@@ -578,6 +600,7 @@ function deleteMechanicalSkill_post(key){
 
    
   function getTeamMemberdata(){
+    try{
     //   e.preventDefault();
       
         // for gold
@@ -585,7 +608,7 @@ function deleteMechanicalSkill_post(key){
         firebase.database().ref(`images/TeamMembers`).once('value').then(function(snapshot){
           //get your posts div
           var posts_div=document.getElementById(`TeamMemberPosts`);
-          
+          try{
           //remove all remaining data in that div
           TeamMemberPosts.innerHTML="";
           //get data from firebase
@@ -605,7 +628,8 @@ function deleteMechanicalSkill_post(key){
          " </div>"+posts_div.innerHTML;
           }
           
-        
+          }
+          catch(e){}
         });
 
 
@@ -613,6 +637,7 @@ function deleteMechanicalSkill_post(key){
 
         firebase.database().ref(`images/TeamMembers`).once('value').then(function(snapshot){
           //get your posts1 div
+          try{
           var posts1_div=document.getElementById(`TeamMemberPosts1`);
           
           //remove all remaining data in that div
@@ -633,7 +658,8 @@ function deleteMechanicalSkill_post(key){
            "  </section>"+
           " </div>"+posts1_div.innerHTML;
            }
-          
+          }
+          catch(e){}
         
         });
       
@@ -642,7 +668,9 @@ function deleteMechanicalSkill_post(key){
       
       
         
-      }
+   }
+  catch(e){}
+finally{console.log("team member data loaded")} }
 
 
 //for past theme about page
@@ -701,12 +729,14 @@ function deleteMechanicalSkill_post(key){
 
 
       function getPastThemedata(){
+        try{
         //   e.preventDefault();
           
             // for gold
           
             firebase.database().ref(`images/PastTheme`).once('value').then(function(snapshot){
               //get your posts div
+              try{
               var posts_div=document.getElementById(`PastPosts`);
               
               //remove all remaining data in that div
@@ -728,13 +758,16 @@ function deleteMechanicalSkill_post(key){
 										"</li>"
                 +posts_div.innerHTML;
               }
-              
+            }
+            
+          catch(e){}
             
             });
           
           
             firebase.database().ref(`images/PastTheme`).once('value').then(function(snapshot){
               //get your posts div
+              try{
               var Posts1_div=document.getElementById(`PastPosts1`);
               
               //remove all remaining data in that div
@@ -757,7 +790,8 @@ function deleteMechanicalSkill_post(key){
 										"</li>"
                 +Posts1_div.innerHTML;
               }
-              
+            }
+            catch(e){}
             
             });
       
@@ -765,7 +799,10 @@ function deleteMechanicalSkill_post(key){
           
           
             
-          }
+      }
+    catch(e){}
+  finally{console.log("past theme data loaded")}
+}
 
       
 
@@ -780,13 +817,13 @@ function deleteMechanicalSkill_post(key){
             // for gold
           
           
-        
+        try{
         
         
             firebase.database().ref(`images/Achievement`).once('value').then(function(snapshot){
               //get your posts div
               var achievementPosts_div=document.getElementById(`achievementPosts2`);
-              
+              try{
               //remove all remaining data in that div
               achievementPosts2.innerHTML="";
               //get data from firebase
@@ -797,27 +834,25 @@ function deleteMechanicalSkill_post(key){
               //we are passing the key of that post to delete it from database
               for(let[key,value] of Object.entries(data)){
                 achievementPosts_div.innerHTML=
-
-               " <div class=col-4 col-12-medium>"+
+               " <div class='col-4 col-12-medium'>"+
 							"	<section   class='highlight'>"+
-								"	<a  class='image featured'><img src="+value.achievementImageURL+" /></a>"+
+								"	<a  class='image featured'><img style='max-height:200px ;' src="+value.achievementImageURL+" /></a>"+
 								"	<h3>"+value.achievementHeading+" </h3>"+
 							"	</section>"+
-						"	</div>"+
-
-            
-
-                achievementPosts_div.innerHTML;
+						"	</div>"+achievementPosts_div.innerHTML;
               }
-              
-            
+            }
+          catch(e){}
+         
+
+
             });
 
             
             firebase.database().ref(`images/Achievement`).once('value').then(function(snapshot){
               //get your posts div
               var achievementPosts_div=document.getElementById(`achievementPosts2_1`);
-              
+              try{
               //remove all remaining data in that div
               achievementPosts2_1.innerHTML="";
               //get data from firebase
@@ -838,13 +873,16 @@ function deleteMechanicalSkill_post(key){
               "	</div>"+
 
                 achievementPosts_div.innerHTML;
-              }
+              }}
+              catch(e){}
               
             
             });
            
           
           }
+        catch(e){}
+      finally{console.log("achievements data 1 loaded")}}
 
 
           // for more 
@@ -898,10 +936,12 @@ function deleteMechanicalSkill_post(key){
         
         
         function getdata(){
+          try{
             firebase.database().ref('images/More').once('value').then(function(snapshot){
               //get your posts div
               var posts_div=document.getElementById('moreposts');
               //remove all remaining data in that div
+              try{
               moreposts.innerHTML="";
               //get data from firebase
               var data=snapshot.val();
@@ -919,7 +959,9 @@ function deleteMechanicalSkill_post(key){
                "	</section>"+
              "	</div>"
                 +posts_div.innerHTML;
-              }
+              }}
+              
+          catch(e){}
             
             });
         
@@ -928,6 +970,7 @@ function deleteMechanicalSkill_post(key){
                 //get your posts div
                 var posts_div=document.getElementById('moreposts1');
                 //remove all remaining data in that div
+                try{
                 moreposts1.innerHTML="";
                 //get data from firebase
                 var data=snapshot.val();
@@ -946,10 +989,13 @@ function deleteMechanicalSkill_post(key){
 									
                 "	</div>"
                    +posts_div.innerHTML;
-                }
+                }}
+                catch(e){}
               
               });
         }
+      catch(e){}
+    finally{console.log("data loaded")}}
         
       
 
@@ -959,11 +1005,11 @@ function deleteMechanicalSkill_post(key){
         //news page
         function newsgetdata(){
   
-  
+  try{
           firebase.database().ref(`news`).once('value').then(function(snapshot){
             //get your posts div
             var newsposts_div=document.getElementById(`newsposts`);
-            
+            try{
             //remove all remaining data in that div
             newsposts.innerHTML="";
             //get data from firebase
@@ -984,7 +1030,8 @@ function deleteMechanicalSkill_post(key){
             //  "<button class='btn btn-danger' id='"+key+"' onclick='deletenews_post(this.id)' style='margin-bottom:30px'>Delete</button>"+
              "</section>"+
              "</div>" ;
-            }
+            }}
+            catch(e){}
             
           
           });
@@ -993,7 +1040,7 @@ function deleteMechanicalSkill_post(key){
           firebase.database().ref(`news`).once('value').then(function(snapshot){
             //get your posts div
             var newsposts1_div=document.getElementById(`newsposts1`);
-           
+           try{
             //remove all remaining data in that div
             newsposts1.innerHTML="";
             //get data from firebase
@@ -1015,12 +1062,15 @@ function deleteMechanicalSkill_post(key){
              "</section>"+
              "</div>" ;
             }
-            
+          }
+          catch(e){}
           
           });
          
         
         }
+      catch(e){}
+    finally{console.log("news data loaded")}}
 
 
 
@@ -1083,11 +1133,11 @@ function deleteMechanicalSkill_post(key){
         function getupdatedata(){
         
         
-       
+       try{
           firebase.database().ref(`images/update`).once('value').then(function(snapshot){
             //get your posts div
             var updatePosts_div=document.getElementById(`updateposts`);
-            
+            try{
             //remove all remaining data in that div
             updateposts.innerHTML="";
             //get data from firebase
@@ -1107,7 +1157,8 @@ function deleteMechanicalSkill_post(key){
 
                 updatePosts_div.innerHTML;
             }
-            
+          }
+          catch(e){}
           
           });
       
@@ -1116,7 +1167,7 @@ function deleteMechanicalSkill_post(key){
           firebase.database().ref(`images/update`).once('value').then(function(snapshot){
             //get your posts div
             var updatePosts_div=document.getElementById(`updateposts1`);
-            
+            try{
             //remove all remaining data in that div
             updateposts1.innerHTML="";
             //get data from firebase
@@ -1136,13 +1187,21 @@ function deleteMechanicalSkill_post(key){
 						"	</div>"+
 
                 updatePosts_div.innerHTML;
+            }}
+            catch(e)
+            {
+
             }
             
           
           });
          
         
-        }
+         } 
+        catch(e){}
+      finally{
+        console.log("updates loaded")
+      }}
 
 
         //registered user data
@@ -1233,13 +1292,13 @@ var state=document.getElementById('state').value;
             // for gold
           
           
-        
+        try{
         
         
             firebase.database().ref(`images/Hardware`).once('value').then(function(snapshot){
               //get your posts div
               var HardwarePosts_div=document.getElementById(`HardwarePhotoposts`);
-              
+              try{
               //remove all remaining data in that div
               HardwarePhotoposts.innerHTML="";
               //get data from firebase
@@ -1261,6 +1320,8 @@ var state=document.getElementById('state').value;
 
               HardwarePosts_div.innerHTML;
               }
+            }
+            catch(e){}
               
             
             });
@@ -1269,7 +1330,7 @@ var state=document.getElementById('state').value;
             firebase.database().ref(`images/Hardware`).once('value').then(function(snapshot){
               //get your posts div
               var HardwarePosts_div=document.getElementById(`HardwarePhotoposts1`);
-              
+              try{
               //remove all remaining data in that div
               HardwarePhotoposts1.innerHTML="";
               //get data from firebase
@@ -1292,14 +1353,17 @@ var state=document.getElementById('state').value;
 
               HardwarePosts_div.innerHTML;
               }
-              
+            }
+            catch(e){}
             
             });
 
             
            
           
-          }
+    }
+  catch(e){}
+finally{console.log("hardware photos loaded")}}
 
 //software photos
 function uploadSoftwarePhoto(){
@@ -1350,11 +1414,11 @@ function uploadSoftwarePhoto(){
 
   function getSoftwarePhotos(){
 
-      
+      try{
           firebase.database().ref(`images/Software`).once('value').then(function(snapshot){
             //get your posts div
             var SoftwarePosts_div=document.getElementById(`SoftwarePhotoposts`);
-            
+            try{
             //remove all remaining data in that div
             SoftwarePhotoposts.innerHTML="";
             //get data from firebase
@@ -1376,14 +1440,15 @@ function uploadSoftwarePhoto(){
 
             SoftwarePosts_div.innerHTML;
             }
-            
+          }
+          catch(e){}
           
           });
 
           firebase.database().ref(`images/Software`).once('value').then(function(snapshot){
             //get your posts div
             var SoftwarePosts_div=document.getElementById(`SoftwarePhotoposts1`);
-            
+            try{
             //remove all remaining data in that div
             SoftwarePhotoposts1.innerHTML="";
             //get data from firebase
@@ -1393,6 +1458,7 @@ function uploadSoftwarePhoto(){
             //we have to pass our data to for loop to get one by one
             //we are passing the key of that post to delete it from database
             for(let[key,value] of Object.entries(data)){
+              
               SoftwarePosts_div.innerHTML=
 
              " <div class=col-4 col-12-medium>"+
@@ -1406,14 +1472,19 @@ function uploadSoftwarePhoto(){
 
             SoftwarePosts_div.innerHTML;
             }
-            
+          }
+          catch(e){}
           
           });
 
          
-         
+        }
+        catch(e){}
+        finally{console.log("software images loaded")}
         
         }
+
+
 
         // Mechanical photos
         function uploadMechanicalPhoto(){
@@ -1464,10 +1535,10 @@ function uploadSoftwarePhoto(){
         
           function getMechanicalPhotos(){
         
-              
+              try{
                   firebase.database().ref(`images/Mechanical`).once('value').then(function(snapshot){
                     //get your posts div
-                    var MechanicalPosts_div=document.getElementById(`MechanicalPhotoposts`);
+                   try{ var MechanicalPosts_div=document.getElementById(`MechanicalPhotoposts`);
                     
                     //remove all remaining data in that div
                     MechanicalPhotoposts.innerHTML="";
@@ -1489,7 +1560,7 @@ function uploadSoftwarePhoto(){
                   
         
                     MechanicalPosts_div.innerHTML;
-                    }
+                    }}catch(e){}
                     
                   
                   });
@@ -1500,7 +1571,8 @@ function uploadSoftwarePhoto(){
                     var MechanicalPosts_div=document.getElementById(`MechanicalPhotoposts1`);
                     
                     //remove all remaining data in that div
-                    MechanicalPhotoposts1.innerHTML="";
+                   try{
+                     MechanicalPhotoposts1.innerHTML="";
                     //get data from firebase
                     var data=snapshot.val();
                     console.log(data);
@@ -1521,7 +1593,7 @@ function uploadSoftwarePhoto(){
         
                     MechanicalPosts_div.innerHTML;
                     }
-                    
+                  }catch(e){}
                   
                   });
         
@@ -1529,4 +1601,4 @@ function uploadSoftwarePhoto(){
                 
                  
                 
-                }
+                }catch(e){}finally{console.log("mechanical photos loaded")}}

@@ -1,12 +1,18 @@
 <!DOCTYPE HTML>
-<html>
+<html >
 
 <head>
 	<title>Robocon LDCE</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes," />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	
+    <link rel="icon" href="images/R.png" type="img/png"/> 
+	
+
+	<meta name="author" content="Robocon LDCE"/>
+	<meta name="description" content="The only robotics club of LDCE"/>
+	<meta name="keywords" content="L.D.,ld,L.D college of engineeringg,lalbhai dalpatbhai college of engineering,engineering college,LDCE,Famous engineering college,government college,colleges in ahmmedabad,colleges,ahmedabad,gujarat,club,LDCE clubs,club in ld college of engineering,famous ld club,technical club,robotics club,robots,tech,national,international,robocon,robotics competition,robots,ec,electrical,communication,computer,it,ic,arduino,mega,adk,nano,stm,hardware,coding,nodemcu,esp32,pi pico,robocon,ABU robocon,DD robocon,india,winner,achievement,team,team members,unity,best club,mechanical,3d printer,hardwork,smart work,registeration"/>
 </head>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js">
 </script>
@@ -31,12 +37,16 @@
 
 @media screen and (max-width: 980px)
 {
+	html 
+	{
+		overflow-x: hidden;
+	}
 	#bottomline{
 
-		border-bottom: none!important;padding-bottom: 0em!important;"
+		border-bottom: none!important;padding-bottom: 0em!important;
 	}
 	#bottomline1{
-padding-bottom: 2em!important;"
+padding-bottom: 2em!important;
 }
 } 
 
@@ -282,19 +292,37 @@ button.social-signin.google {
 
 
 <script type="text/javascript" defer>
+	
+	 
 	$(document).scroll(function()
 		{
-			preload.remove();
+
+			try {
+				preload.remove();
 			document.getElementById("page").style.overflow="scroll";
+	}
+	catch (e) {
+	 
+	}
+	finally {
+	}
+		
 		}
 	);
 	$(document).ready(function () {
+	
 		setTimeout(function () {
-			preload.remove();
+			try{
+				preload.remove();
 			document.getElementById("page").style.overflow="scroll";
+		}
+		catch(e){
+			
+		}			
 		}, 5000);
 	});
 </script>
+
 <div  id="preload" style="background-color: #22283e;width: 100vw!important;height: 100vh!important" >
 	<div class="logo"id="logo" style="top:15px">
 
@@ -302,7 +330,7 @@ button.social-signin.google {
 	</div>
 </div>
 
-<body class="homepage is-preload" style=" background-color: #22283e;overflow: hidden;"id="page"  oncontextmenu="return false">
+<body class="homepage is-preload" style=" background-color: #22283e;overflow: hidden;"id="page"  oncontextmenu="return false" >
 
 
 	
@@ -416,6 +444,8 @@ button.social-signin.google {
 			<br><br><br>
 
 		</form>
+
+
 	</div>
 
 		
@@ -703,7 +733,8 @@ button.social-signin.google {
 										<p>
 											<a target="_blank" href="https://www.instagram.com/roboconldce/">Instagram</a><br />
 											<a target="_blank" href="https://in.linkedin.com/company/robocon-ldce-team-robocon-india-2019">Linkedin</a><br />
-											<a target="_blank" href="https://www.facebook.com/roboconldce">facebook</a>
+											<a target="_blank" href="https://www.facebook.com/roboconldce">Facebook</a><br/>
+											<a target="_blank" href="https://www.youtube.com/channel/UCveaFeSutjn5bpJCSy6kGjQ">Youtube</a>
 										</p>
 									</section>
 								</div>
@@ -845,7 +876,7 @@ button.social-signin.google {
 			  })
 	  
 			   alert('User loged in!');
-			   document.getElementById("achievementPosts1").style.display='block';
+			   document.getElementById("achievementPosts1").style.display='flex';
 			   document.getElementById("achievementPosts").style.display='none';
 			   document.getElementById("hidden").style.display='block';
 			  document.getElementById("Silverposts1").style.display='flex';
@@ -854,8 +885,8 @@ button.social-signin.google {
 			  document.getElementById("Silverposts").style.display='none';
 			  document.getElementById("posts").style.display='none';
 			  document.getElementById("Bronzeposts").style.display='none';
-			   document.getElementById("hidden1").style.display='block';
-			   document.getElementById("hidden2").style.display='block';
+			   document.getElementById("hidden1").style.display='flex';
+			   document.getElementById("hidden2").style.display='flex';
 			   window. people='true';
 			  
 			   document.onkeydown=function(e)
@@ -916,7 +947,7 @@ button.social-signin.google {
 		   document.getElementById("hidden1").style.display = 'none';
 		   document.getElementById("hidden2").style.display='none';
 
-		   document.getElementById("achievementPosts").style.display='block';
+		   document.getElementById("achievementPosts").style.display='flex';
 			   document.getElementById("achievementPosts1").style.display='none';
 		   document.getElementById("Silverposts1").style.display='none';
 			  document.getElementById("posts1").style.display='none';
